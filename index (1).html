@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>João Gabriel Fogo Moreira — Desenvolvedor Full Stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span class="dot"></span>joao.dev</div>
+    <div class="nav-links">
+      <a href="#sobre">sobre</a>
+      <a href="#stack">stack</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" style="border-top:none; padding-top:80px;">
+    <div class="eyebrow">
+      status: em desenvolvimento contínuo
+      <span class="status-badge"><span class="pulse"></span>disponível para freelas</span>
+    </div>
+    <h1>João Gabriel Fogo Moreira constrói <span class="accent-text">produtos completos</span>, do banco de dados ao deploy.</h1>
+    <p class="hero-sub">Desenvolvedor Full Stack no terceiro ano do ensino médio, com o olho já em Engenharia de Software. Aprendo construindo: dois SaaS reais, vendidos e em uso, é o meu currículo.</p>
+
+    <div class="terminal">
+      <div class="term-bar">
+        <div class="term-dot" style="background:#FF5F57;"></div>
+        <div class="term-dot" style="background:#FEBC2E;"></div>
+        <div class="term-dot" style="background:#28C840;"></div>
+        <span class="term-title">sobre-mim.json</span>
+      </div>
+      <div class="term-body">
+        <div class="line"><span class="prompt">$</span><span>cat sobre-mim.json</span></div>
+        <div class="line">{</div>
+        <div class="line">&nbsp;&nbsp;<span class="val-key">"nome"</span>: <span class="val-str">"João Gabriel Fogo Moreira"</span>,</div>
+        <div class="line">&nbsp;&nbsp;<span class="val-key">"foco"</span>: <span class="val-str">"full stack — Next.js, Supabase, Vercel"</span>,</div>
+        <div class="line">&nbsp;&nbsp;<span class="val-key">"formação"</span>: <span class="val-str">"3º ano do ensino médio"</span>,</div>
+        <div class="line">&nbsp;&nbsp;<span class="val-key">"projetos_em_produção"</span>: 2,</div>
+        <div class="line">&nbsp;&nbsp;<span class="val-key">"objetivo"</span>: <span class="val-str">"evoluir em Engenharia de Software"</span><span class="cursor"></span></div>
+        <div class="line">}</div>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+      <a href="#contato" class="btn btn-ghost">Falar comigo</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="reveal">
+    <div class="sec-label">01 · sobre</div>
+    <h2>Aprendendo na prática, construindo de verdade</h2>
+    <div class="about-layout">
+      <img src="foto.jpg" alt="Foto de João Gabriel Fogo Moreira" class="profile-photo">
+      <p class="about-text">
+        Sou <strong>estudante do terceiro ano do ensino médio</strong> com planos claros de seguir para Engenharia de Software.
+        Em vez de esperar a faculdade para começar, decidi aprender construindo produtos reais: hoje tenho
+        <strong>dois sistemas SaaS em produção</strong>, vendidos para negócios de verdade, cuidando sozinho de todo o processo —
+        banco de dados, backend, frontend, autenticação, pagamentos e deploy. Estou sempre buscando evoluir e assumir desafios maiores dentro da área.
+      </p>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="reveal">
+    <div class="sec-label">02 · stack</div>
+    <h2>Tecnologias que uso no dia a dia</h2>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3>Frontend</h3>
+        <div class="chips">
+          <span class="chip">Next.js</span>
+          <span class="chip">React</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>Backend & Dados</h3>
+        <div class="chips">
+          <span class="chip">Supabase</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Node.js</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>Infra & Deploy</h3>
+        <div class="chips">
+          <span class="chip">Vercel</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">CI/CD</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h3>IA & Integrações</h3>
+        <div class="chips">
+          <span class="chip">OpenAI API</span>
+          <span class="chip">Stripe</span>
+          <span class="chip">Zod</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="reveal">
+    <div class="sec-label">03 · projetos</div>
+    <h2>Produtos em produção, não só protótipos</h2>
+
+    <div class="project-card">
+      <div class="project-top">
+        <div class="project-name">Fit AI</div>
+        <a href="https://fit-ia-8eoj.vercel.app/" target="_blank" rel="noopener" class="project-link">ver projeto ↗</a>
+      </div>
+      <p class="project-desc">
+        Aplicativo de treinos com IA. Onboarding em 11 etapas para entender o usuário, geração de treinos personalizados,
+        acompanhamento de evolução com gráficos, timer de descanso com animação em SVG e modelo freemium com teste
+        grátis de 2 dias via Stripe.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">OpenAI API</span><span class="tag">Stripe</span><span class="tag">Recharts</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top">
+        <div class="project-name">Sistema de Agendamento para Barbearias</div>
+        <a href="https://barbearia-vieira-ncas.vercel.app/" target="_blank" rel="noopener" class="project-link">ver projeto ↗</a>
+      </div>
+      <p class="project-desc">
+        SaaS completo de gestão para barbearias: agendamento online, painel administrativo, relatórios financeiros,
+        controle de estoque e personalização de tema por cliente. Cada barbearia roda em seu próprio projeto
+        Supabase + Vercel, com um script SQL consolidado que deixa o setup rápido para novos clientes.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">Tailwind CSS</span><span class="tag">Vercel</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONALIZE -->
+  <section class="reveal">
+    <div class="sec-label">04 · personalização</div>
+    <div class="personalize-box">
+      <div class="personalize-copy">
+        <h2 style="margin-bottom:0; font-size:1.25rem;">Esse site também é personalizável</h2>
+        <p>Assim como fiz no sistema de agendamento para barbearias — onde cada cliente escolhe o tema da própria loja — este portfólio deixa você trocar a cor de destaque. Escolha uma:</p>
+      </div>
+      <div class="swatches" id="swatches">
+        <button class="swatch active" style="background:#FF8A3D" data-accent="#FF8A3D" data-soft="rgba(255,138,61,0.12)" aria-label="Laranja"></button>
+        <button class="swatch" style="background:#3DDBFF" data-accent="#3DDBFF" data-soft="rgba(61,219,255,0.12)" aria-label="Ciano"></button>
+        <button class="swatch" style="background:#B47CFF" data-accent="#B47CFF" data-soft="rgba(180,124,255,0.12)" aria-label="Violeta"></button>
+        <button class="swatch" style="background:#5EDC8C" data-accent="#5EDC8C" data-soft="rgba(94,220,140,0.12)" aria-label="Verde"></button>
+        <button class="swatch" style="background:#FF5C8A" data-accent="#FF5C8A" data-soft="rgba(255,92,138,0.12)" aria-label="Rosa"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="reveal">
+    <div class="sec-label">05 · contato</div>
+    <h2>Vamos conversar</h2>
+    <p class="about-text" style="margin-bottom:24px;">Aberto para freelas e oportunidades onde eu possa aprender e crescer como desenvolvedor.</p>
+    <div class="contact-grid">
+      <a href="mailto:fogomoreirajoao@gmail.com" class="contact-card">
+        <div class="contact-icon">@</div>
+        <div><div class="contact-label">E-mail</div><div class="contact-value">fogomoreirajoao@gmail.com</div></div>
+      </a>
+      <a href="https://www.linkedin.com/in/joao-gabriel-643a0a400/" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">in</div>
+        <div><div class="contact-label">LinkedIn</div><div class="contact-value">joao-gabriel</div></div>
+      </a>
+      <a href="https://github.com/joaofogo1" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">&lt;/&gt;</div>
+        <div><div class="contact-label">GitHub</div><div class="contact-value">@joaofogo1</div></div>
+      </a>
+      <a href="https://wa.me/5544998286163" target="_blank" rel="noopener" class="contact-card">
+        <div class="contact-icon">✆</div>
+        <div><div class="contact-label">WhatsApp</div><div class="contact-value">(44) 99828-6163</div></div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  feito por João Gabriel Fogo Moreira <span class="dot">·</span> <span id="year"></span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
